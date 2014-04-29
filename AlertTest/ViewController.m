@@ -26,13 +26,18 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)pressButton:(id)sender
+
+-(IBAction)pressSystemButton:(id)sender
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title鼓楼区华东设计院title鼓楼区华东设计院" message:@"measgetitle鼓楼区华东设计院title鼓楼区华东设计院" delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:@"取消", nil];
+    [alertView show];
+
+}
+
+-(IBAction)pressCustomButton:(id)sender
 {
     HHAlertView *alertView = [[HHAlertView alloc] initWithTitle:@"title鼓楼区华东设计院title鼓楼区华东设计院" message:@"measgetitle鼓楼区华东设计院title鼓楼区华东设计院" delegate:self cancelButtonTitle:@"确定" otherButtonTitle:@"取消"];
     [alertView show];
-    
-//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title鼓楼区华东设计院title鼓楼区华东设计院" message:@"measgetitle鼓楼区华东设计院title鼓楼区华东设计院" delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:@"取消", nil];
-//    [alertView show];
 }
 
 #pragma mark - HHAlertView

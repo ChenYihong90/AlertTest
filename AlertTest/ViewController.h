@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
--(IBAction)pressButton:(id)sender;
+-(IBAction)pressSystemButton:(id)sender;
+
+-(IBAction)pressCustomButton:(id)sender;
 
 @end
